@@ -1,0 +1,4 @@
+We are writing this file synchronously using node.jsthis text will be appendedthis text will be appended
+this text will be appended
+
+this text will be appended
