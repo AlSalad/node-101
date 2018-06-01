@@ -8,11 +8,9 @@ mongo.connect(URL, function(err , client){
 
 	var db = client.db(DB);
 
-	var data = { name : "luka" , age : "21" , mobile : "1234567890" }
-
 	db.collection("details").findOne({}, (err , collection) => {
 		if(err) throw err;
-		console.log("Record inserted successfully");
+		console.log("Record found successfully");
 		console.log(collection);
 		client.close();
 	});

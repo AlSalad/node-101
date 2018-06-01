@@ -12,7 +12,7 @@ mongo.connect(URL, function(err , client){
 
 	db.collection("details").deleteOne(query, (err , collection) => {
 		if(err) throw err;
-		console.log("Record inserted successfully");
+		console.log("Record deleted successfully");
 		console.log(collection);
 		client.close();
 	});
